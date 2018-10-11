@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './InputKeyStrokes.css'
 
 class InputKeyStrokes extends Component {
   constructor(props) {
@@ -16,10 +17,10 @@ class InputKeyStrokes extends Component {
 
   render() {
     return (
-      <form>
+      <form className="form">
         <input
           type="text"
-          placeholder="Please input a key"
+          placeholder="Input keys combination"
           value={this.state.inputKeys}
           onChange={this.onChangeHandler}
         />
