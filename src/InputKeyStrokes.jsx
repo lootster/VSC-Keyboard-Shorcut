@@ -15,6 +15,7 @@ class InputKeyStrokes extends Component {
     });
   };
 
+
   render() {
     return (
       <form className="form">
@@ -23,6 +24,7 @@ class InputKeyStrokes extends Component {
           placeholder="Input keys combination"
           value={this.state.inputKeys}
           onChange={this.onChangeHandler}
+          onKeyDown={(event)=>this.props.checkValue(this.props.id, event)}
         />
         <button
           onClick={event => {

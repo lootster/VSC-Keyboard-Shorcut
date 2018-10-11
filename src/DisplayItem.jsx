@@ -1,21 +1,19 @@
-import React from 'react';
+import React from "react";
 import "./DisplayItem.css";
 
-const DisplayItem = (props) => {
-  const { id, task, firstkey, secondkey, thirdkey, alternatekey} = props;
-
+const DisplayItem = ({
+  keyStrokeData: { id, task, firstkey: { symbol, code}, secondkey, thirdkey, alternatekey }
+}) => {
   return (
     <div className="wrapper">
-      <div>{id}</div>
+      <div>Key ID: {id}</div>
       <div>{task}</div>
-
-      <div>{firstkey}</div>
+      <div>{symbol}</div>
       <div>{secondkey}</div>
       <div>{thirdkey}</div>
       <div>{alternatekey}</div>
-      
     </div>
   );
-}
+};
 
 export default DisplayItem;
