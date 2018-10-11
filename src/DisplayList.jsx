@@ -1,32 +1,34 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import DisplayItem from "./DisplayItem"
 
 class DisplayList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      keyStrokes: this.props.keyStrokes,
+      keyStrokes: this.props.keyStrokes
     };
   }
 
   render() {
-
     const { keyStrokes } = this.state;
-    const displayKeys = keyStrokes.map(eachKey => {
+    const displayKeys = keyStrokes.map(eachKeyStrokes => {
       return (
         <div>
-          {eachKey.id}
-          {eachKey.task}
-          {eachKey.firstkey}
-          {eachKey.thirdkey}
-          {eachKey.alternatekey} 
+          <DisplayItem
+          id={eachKeyStrokes.id}
+          task={eachKeyStrokes.task}
+          firstkey={eachKeyStrokes.firstkey}
+          secondkey={eachKeyStrokes.secondkey}
+          thirdkey={eachKeyStrokes.thirdkey}
+          alternatekey={eachKeyStrokes.alternatekey}
+          />
         </div>
       );
-    })
-
+    });
 
     return (
       <div>
-        {displayKeys}
+        <ul>{displayKeys}</ul>
       </div>
     );
   }
