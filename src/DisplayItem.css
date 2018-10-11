@@ -1,0 +1,14 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto 2px;
+  /* grid-auto-rows: minmax(20px, auto); */
+  grid-row-gap: 10px;
+}
+
+.wrapper > div { /* give children divs some color to make our changes visible */
+  font-size: 1.5em;
+  background: lightblue;
+  margin: 1px;
+  align-self: center;
+}

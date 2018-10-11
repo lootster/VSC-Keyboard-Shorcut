@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import DisplayItem from "./DisplayItem"
+import InputKeyStrokes from "./InputKeyStrokes"
 
 class DisplayList extends Component {
   constructor(props) {
@@ -28,6 +29,9 @@ class DisplayList extends Component {
 
     return (
       <div>
+        <p>
+          <InputKeyStrokes />
+        </p>
         <ul>{displayKeys}</ul>
       </div>
     );
