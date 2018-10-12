@@ -1,61 +1,46 @@
-export const keyStrokes = [{
+export const keyStrokes = [
+  {
     id: 0,
     category: "General",
-    task: "Show Left",
-    firstkey: {
-      symbol: "Ctrl",
-      code: 37,
-    },
+    task: "Hit Left",
+    firstkey: "Left",
+    firstkeycode: 37,
     secondkey: "",
+    secondkeycode: "",
     thirdkey: "",
-    alternatekey: "",
+    thirdkeycode: ""
   },
   {
     id: 1,
     category: "General",
-    task: "Show Right",
-    firstkey: {
-      symbol: "Right",
-      code: 39,
-    },
+    task: "Hit Right",
+    firstkey: "Right",
+    firstkeycode: 39,
     secondkey: "",
+    secondkeycode:"",
     thirdkey: "",
-    alternatekey: "",
+    thirdkeycode: ""
   },
   {
     id: 2,
     category: "General",
-    task: "New window / instance",
-    firstkey: 17,
-    secondkey: 16,
-    thirdkey: 80,
-    alternatekey: "None",
+    task: "Hit Ctrl",
+    firstkey: "Ctrl",
+    firstkeycode: 17,
+    secondkey: "",
+    secondkeycode: "",
+    thirdkey: "",
+    thirdkeycode: ""
   },
-  // {
-  //   id: "04",
-  //   category: "General",
-  //   task: "Close window / instance",
-  //   firstkey: "Ctrl",
-  //   secondkey: "Shift",
-  //   thirdkey: "W",
-  //   alternatekey: "None",
-  // },
-  // {
-  //   id: "05",
-  //   category: "General",
-  //   task: "User settings",
-  //   firstkey: "Ctrl",
-  //   secondkey: ",",
-  //   thirdkey: "None",
-  //   alternatekey: "None",
-  // },
-  // {
-  //   id: "06",
-  //   category: "General",
-  //   task: "Keyboard Shortcuts",
-  //   firstkey: "Ctrl",
-  //   secondkey: "K",
-  //   thirdkey: "None",
-  //   alternatekey: "None",
-  // },
+  {
+    id: 3,
+    category: "General",
+    task: "Hit Ctrl+n",
+    firstkey: "ctrl",
+    firstkeycode: 17,
+    secondkey: "n",
+    secondkeycode: 78,
+    thirdkey: "",
+    thirdkeycode: ""
+  }
 ];
